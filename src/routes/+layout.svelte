@@ -93,9 +93,10 @@
 
         margin: 0px;
         padding: 0px;
-        min-height: 100vh;
 
         > :global(div) {
+            min-height: 100vh;
+
             & > #navbar {
                 padding: 1rem;
                 gap: 1rem;
@@ -193,13 +194,13 @@
         font-family: Rufina;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 999px) {
         :global(.hidden-mobile) {
             display: none !important;
         }
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1000px) {
         :global(body) > :global(div) {
             display: flex;
 
