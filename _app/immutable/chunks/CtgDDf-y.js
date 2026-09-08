@@ -1,0 +1,1 @@
+import{g as e,m as t,v as n}from"./xifKf3q5.js";import"./xihTtKlq.js";import"./Ds5XlEot.js";var r=n(e(`<span>contact [at] khenr [dot] se<script src="/scripts/email.js"><\/script></span>`));function i(e){t(e,r())}export{i as t};
