@@ -95,85 +95,87 @@
         padding: 0px;
         min-height: 100vh;
 
-        & > #navbar {
-            padding: 1rem;
-            gap: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            background-color: var(--navbar-bg);
-
-            & > header {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 3rem;
-                width: 100%;
-                & > a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 1rem;
-                    text-decoration: none; /* Get rid of the underline from using an a tag */
-
-                    & > img {
-                        width: 40px;
-                        border: var(--menu-separator);
-                        box-sizing: border-box;
-                    }
-                    & > p {
-                        font-family: Vollkorn;
-                        font-size: x-large;
-                        color: var(--profile-text);
-                    }
-                }
-                & > button {
-                    display: block;
-                    padding: unset;
-                    background-color: unset;
-                    border: unset;
-                    cursor: pointer;
-                    aspect-ratio: 1;
-                    height: 40px;
-                    border: 1px solid var(--menu-expand-btn-hover-bg);
-                    &:active {
-                        background-color: var(--menu-expand-btn-hover-bg);
-                    }
-                    & > img {
-                        width: 100%;
-                    }
-                }
-            }
-            & > div {
+        > :global(div) {
+            & > #navbar {
+                padding: 1rem;
+                gap: 1rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 1rem;
-                & > nav {
+
+                background-color: var(--navbar-bg);
+
+                & > header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 3rem;
                     width: 100%;
+                    & > a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
+                        text-decoration: none; /* Get rid of the underline from using an a tag */
+
+                        & > img {
+                            width: 40px;
+                            border: var(--menu-separator);
+                            box-sizing: border-box;
+                        }
+                        & > p {
+                            font-family: Vollkorn;
+                            font-size: x-large;
+                            color: var(--profile-text);
+                        }
+                    }
+                    & > button {
+                        display: block;
+                        padding: unset;
+                        background-color: unset;
+                        border: unset;
+                        cursor: pointer;
+                        aspect-ratio: 1;
+                        height: 40px;
+                        border: 1px solid var(--menu-expand-btn-hover-bg);
+                        &:active {
+                            background-color: var(--menu-expand-btn-hover-bg);
+                        }
+                        & > img {
+                            width: 100%;
+                        }
+                    }
                 }
-                & > small {
-                    font-family: Inter;
-                    color: var(--navbar-fineprint);
-                    width: 80%;
-                    text-align: center;
+                & > div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                    & > nav {
+                        width: 100%;
+                    }
+                    & > small {
+                        font-family: Inter;
+                        color: var(--navbar-fineprint);
+                        width: 80%;
+                        text-align: center;
+                    }
                 }
             }
-        }
-        & > main {
-            flex: 1;
-            & > article {
-                padding: 1rem;
-                background-color: var(--content-bg);
-                height: 100%;
-                box-sizing: border-box;
-
-                & > :global(section) {
-                    background-color: var(--article-bg);
+            & > main {
+                flex: 1;
+                & > article {
                     padding: 1rem;
-                    &:not(:first-child) {
-                        margin-top: 1rem;
+                    background-color: var(--content-bg);
+                    height: 100%;
+                    box-sizing: border-box;
+
+                    & > :global(section) {
+                        background-color: var(--article-bg);
+                        padding: 1rem;
+                        &:not(:first-child) {
+                            margin-top: 1rem;
+                        }
                     }
                 }
             }
@@ -198,7 +200,7 @@
     }
 
     @media screen and (min-width: 800px) {
-        :global(body) {
+        :global(body) > :global(div) {
             display: flex;
 
             & > #navbar {
