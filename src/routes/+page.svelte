@@ -1,3 +1,7 @@
+<script>
+    import Email from "$lib/components/Email.svelte";
+</script>
+
 <section>
     <h1>About this webpage</h1>
     <p>
@@ -18,7 +22,7 @@
     <h1>About me</h1>
     Github: k-henr<br />
     Discord: k_henr<br />
-    Email: <span class="email">contact [at] khenr [dot] se</span><br />
+    Email: <Email /><br />
     <p>
         I'm a swede who likes programming and mathematics. I'm also currently (as of
         summer 2026) trying to learn more about electronics and breadboard circuits.

@@ -1,5 +1,6 @@
 <script lang="ts">
     import favicon from "$lib/assets/favicon.ico";
+    import Email from "$lib/components/Email.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
 
     let { children } = $props();
@@ -54,10 +55,7 @@
         </nav>
         <small
             ><i>
-                Want to chat? Send me an email at <span class="email"
-                    >contact [at] khenr [dot] se (sorry for the obfuscation - bots
-                    abound!)</span
-                > or find me on discord as k_henr!
+                Want to chat? Send me an email at <Email /> or find me on discord as k_henr!
             </i></small
         >
     </div>
@@ -67,14 +65,6 @@
     <article>
         {@render children()}
     </article>
-
-    <!-- script for setting email address to non-obfuscated version -->
-    <!-- TODO: This only runs once, so it won't update on dynamic changes. Fix this! -->
-    <script>
-        let text = "ees.rneehk" + "@" + "tcatnoc";
-        text = text.split("").reverse().join("").replaceAll("ee", "e");
-        for (const e of document.getElementsByClassName("email")) e.innerText = text;
-    </script>
 </main>
 
 <style>
@@ -104,8 +94,6 @@
         margin: 0px;
         padding: 0px;
         min-height: 100vh;
-
-        display: block;
 
         & > #navbar {
             padding: 1rem;
