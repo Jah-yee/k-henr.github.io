@@ -242,6 +242,9 @@
         --menu-expand-btn-hover-bg: #787878;
         --menu-item-hover: #5a5a5a;
 
+        --footnote-border: #aaa;
+        --footnote-bg: #eee;
+
         --links: #0b4e85;
         --links-active: #072f51;
     }
