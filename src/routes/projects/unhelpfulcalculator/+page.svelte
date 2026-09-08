@@ -22,6 +22,11 @@
         href="https://khenr.se/unhelpful-calculator"
         target="_blank">Unhelpful calculator</LinkWithIcon
     >
+    <LinkWithIcon
+        src="/icons/github.svg"
+        href="https://github.com/k-henr/unhelpful-calculator"
+        target="_blank">Github repository</LinkWithIcon
+    >
     <h2>List of supported keywords</h2>
     <p>Functions:</p>
     <ul>

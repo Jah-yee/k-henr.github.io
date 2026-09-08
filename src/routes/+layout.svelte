@@ -1,7 +1,6 @@
 <script lang="ts">
     import favicon from "$lib/assets/favicon.ico";
     import MenuItem from "$lib/components/MenuItem.svelte";
-    import { reverse } from "node:dns";
 
     let { children } = $props();
 
@@ -20,15 +19,17 @@
 
 <svelte:head>
     <link rel="icon" href={favicon} />
-    <title>khenr</title>
+    <title>k_henr</title>
 </svelte:head>
 
 <!-- Menu -->
 <div id="navbar">
     <header>
         <a href="/">
-            <img src="/logo.png" alt="My go-to profile" />
-            <p>khenr</p>
+            <!-- Remove the warning from using the word "picture" in an alt -->
+            <!-- svelte-ignore a11y_img_redundant_alt -->
+            <img src="/profile-picture.png" alt="My go-to profile picture" />
+            <p>k_henr</p>
         </a>
         <button onclick={toggleMenu} aria-label="toggle menu visibility"
             ><img src="/icons/menu.svg" alt="menu" /></button
@@ -49,13 +50,14 @@
                 <MenuItem name="Tetris" href="/projects/desmostetris" />
                 <MenuItem name="3Desmos" href="/projects/3desmos" />
             </MenuItem>
+            <MenuItem name="&quot;Stack&quot;" href="/stack"></MenuItem>
         </nav>
         <small
             ><i>
                 Want to chat? Send me an email at <span class="email"
                     >contact [at] khenr [dot] se (sorry for the obfuscation - bots
                     abound!)</span
-                > or find me on discord as khenr!
+                > or find me on discord as k_henr!
             </i></small
         >
     </div>
@@ -67,6 +69,7 @@
     </article>
 
     <!-- script for setting email address to non-obfuscated version -->
+    <!-- TODO: This only runs once, so it won't update on dynamic changes. Fix this! -->
     <script>
         let text = "ees.rneehk" + "@" + "tcatnoc";
         text = text.split("").reverse().join("").replaceAll("ee", "e");
@@ -75,6 +78,17 @@
 </main>
 
 <style>
+    /* Used in headers */
+    @font-face {
+        font-family: "Rufina";
+        src: url("/fonts/Rufina-Regular.ttf");
+    }
+    /* Used by default */
+    @font-face {
+        font-family: "Vollkorn";
+        src: url("/fonts/Vollkorn-Regular.ttf");
+    }
+    /* Used for smaller print where a serif font isn't legible enough */
     @font-face {
         font-family: "Inter";
         src: url("/fonts/Inter_24pt-Regular.ttf");
@@ -85,7 +99,7 @@
     }
 
     :global(body) {
-        font-family: Inter;
+        font-family: Vollkorn;
 
         margin: 0px;
         padding: 0px;
@@ -121,6 +135,7 @@
                         box-sizing: border-box;
                     }
                     & > p {
+                        font-family: Vollkorn;
                         font-size: x-large;
                         color: var(--profile-text);
                     }
@@ -151,6 +166,7 @@
                     width: 100%;
                 }
                 & > small {
+                    font-family: Inter;
                     color: var(--navbar-fineprint);
                     width: 80%;
                     text-align: center;
@@ -181,6 +197,10 @@
         &:active {
             color: var(--links-active);
         }
+    }
+
+    :global(h1, h2, h3, h4, h5, h6) {
+        font-family: Rufina;
     }
 
     @media screen and (max-width: 800px) {

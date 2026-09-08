@@ -31,12 +31,11 @@
     <p>Programming languages that I <del>like</del> <i>have used</i>:</p>
     <ul>
         <li>C#</li>
-        <li>Java</li>
-        <li>Processing</li>
-        <li>Static HTML/CSS/JS</li>
+        <li>Java (+Processing)</li>
+        <li>Static HTML/CSS/JS/TS</li>
         <li>Python</li>
-        <li>Very little sveltekit</li>
-        <li>Even less nextjs</li>
+        <li>A little SvelteKit</li>
+        <li>and a few more</li>
     </ul>
     <p>
         See some of my projects <a href="/projects">here</a>.

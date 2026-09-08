@@ -32,6 +32,13 @@
     >
         The Ghost is your Friend
     </LinkWithIcon>
+    <LinkWithIcon
+        href="https://github.com/k-henr/theGhostIsYourFriend"
+        src="/icons/github.svg"
+        target="_blank"
+    >
+        Github repository
+    </LinkWithIcon>
     <p>
         The ghost was actually a last-day addition (or last-two-days, anyways). I
         originally just had the demon, but the best strategy was always to just run

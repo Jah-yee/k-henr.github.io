@@ -23,4 +23,7 @@
         width: 100%;
         object-fit: contain;
     }
+    i {
+        font-family: Inter;
+    }
 </style>

@@ -18,7 +18,7 @@ todo: undo all this when moving from GHP
 - Change the contents of `svelte.config.js`, see website for exact changes
 - Add file `layout.ts` and `export const prerender = true` from it
 - Add a `.nojekyll` file in `/src/static` to stop Jekyll themes from messing stuff up
-- Add `"deploy": "npm run build && gh-pages -d build -t"` under package.json/scripts, for a quick way to deploy by running `npm run deploy` in a terminal
-- Since I use my own domain, I also had to add `/src/static/CNAME` in order to not overwrite it when deploying
+- Add `"deploy": "npm run build && gh-pages -d build -t"` under package.json/scripts, for a quick way to deploy by running `npm run deploy` in a terminal. _Note: Pushing while GHP is deploying seems to cause issues._
+- Since I use my own domain, I also had to add `/src/static/CNAME` in order to not overwrite it when deploying. I think that the file is for determining what domain I want to use instead of k-henr.github.io, but I'm not sure
 
 (this seems to have also created a gh-pages branch which I may want to delete)
