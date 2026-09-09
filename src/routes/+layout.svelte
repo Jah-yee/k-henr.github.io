@@ -40,6 +40,7 @@
         <nav>
             <MenuItem name="Home" href="/" />
             <MenuItem name="Projects" href="/projects">
+                <MenuItem name="Resource Calculator" href="/projects/resourcecalc" />
                 <MenuItem
                     name="The Ghost is your Friend"
                     href="/projects/ghostfriend"

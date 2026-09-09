@@ -10,6 +10,9 @@
         projects that have either been put here because I enjoyed making them, or
         because I enjoyed the result.
     </p>
+    <LinkWithIcon src="/icons/resourcecalc.svg" href="/projects/resourcecalc"
+        >Resource Calculator</LinkWithIcon
+    >
     <LinkWithIcon src="/icons/calculator.svg" href="/projects/unhelpfulcalculator"
         >Unhelpful calculator</LinkWithIcon
     >
@@ -20,6 +23,6 @@
         >3Desmos</LinkWithIcon
     >
     <LinkWithIcon src="/icons/desmos.ico" href="/projects/desmostetris"
-        >Tetris is Desmos</LinkWithIcon
+        >Tetris in Desmos</LinkWithIcon
     >
 </section>
