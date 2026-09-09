@@ -1,11 +1,11 @@
-import{A as e,H as t,M as n,N as r,P as i,U as a,b as o,d as s,f as c,g as l,j as u,m as d,x as f,y as p}from"../chunks/xifKf3q5.js";import"../chunks/xihTtKlq.js";import"../chunks/Ds5XlEot.js";var m=l(`<span class="svelte-a911m4"><!></span>`),h=l(`<button class="svelte-a911m4">[note]</button> <!>`,1);function g(t,l){let p=i(!1);var g=h(),_=u(g),v=n(_,2),y=t=>{var n=m();s(e(n),()=>l.children),a(n),d(t,n)};c(v,e=>{f(p)&&e(y)}),o(`click`,_,()=>r(p,!f(p))),d(t,g)}p([`click`]);var _=l(`The way this works, to my understanding, is that there's a central
+import{A as e,H as t,M as n,U as r,g as i,j as a,m as o}from"../chunks/xifKf3q5.js";import"../chunks/xihTtKlq.js";import"../chunks/Ds5XlEot.js";import{t as s}from"../chunks/DIkpAhqN.js";var c=i(`The way this works, to my understanding, is that there's a central
             authority that's responsible for the top domain, and then the registrars
             can request domains from this authority. The authority takes money for
             this, and it's up to the registrar to choose how much they want to charge
             the customer. So if the central authority for .com domains (<a href="https://en.wikipedia.org/wiki/Verisign">Verisign</a>) decides to double the price for all .com domains, all the registrars
             would have to follow to stay alive. I'd assume that there would be some
             legal trouble for Verisign if they tried, but I prefer to interact with a
-            nonprofit either way.`,1),v=l(`<section><h1>Hosting solutions</h1> <p>At the time of writing, I host all my projects on Github Pages. This is nice
+            nonprofit either way.`,1),l=i(`<section><h1>Hosting solutions</h1> <p>At the time of writing, I host all my projects on Github Pages. This is nice
         for stability and ease of use, but doesn't let me do dynamic pages. Since
         SvelteKit supports dynamic websites as well and GHP can't distinguish between
         the static and dynamic part I also have to do a weird prerender thing to get
@@ -31,4 +31,4 @@ import{A as e,H as t,M as n,N as r,P as i,U as a,b as o,d as s,f as c,g as l,j a
         eventually I landed on .se. There were a few reasons for that, but mainly I
         chose it because the organization that manages these is nicer than the .com
         one. They also have a maximum price for the domain, so while the "rent" on a
-        .com domain could theoretically rise arbitrarily high <!>, .se-domains have more bureucratic protections.</p></section>`,1);function y(r){var i=v(),o=n(u(i),4),s=n(e(o),4);g(n(e(s)),{children:(e,n)=>{t();var r=_();t(2),d(e,r)},$$slots:{default:!0}}),t(),a(s),a(o),d(r,i)}export{y as component};
+        .com domain could theoretically rise arbitrarily high <!>, .se-domains have more bureucratic protections.</p></section>`,1);function u(i){var u=l(),d=n(a(u),4),f=n(e(d),4);s(n(e(f)),{children:(e,n)=>{t();var r=c();t(2),o(e,r)},$$slots:{default:!0}}),t(),r(f),r(d),o(i,u)}export{u as component};
